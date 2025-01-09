@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav>
+            <h1>
+                Calculator
+            </h1>
+        </nav>
+    </div>
+    <div class="main-container">
+        <div class="calc-wrapper">
+            <div class="calc-container">
+                <div class="monitor-container">
+                    <div id="monitor"></div>
+                </div>
+                <div class="button-container">
+                    <button onClick="button(1)">1</button>
+                    <button onClick="button(2)">2</button>
+                    <button onClick="button(3)">3</button>
+                    <button id="operator" onClick="button('+')">+</button>
+                    <button onClick="button(4)">4</button>
+                    <button onClick="button(5)">5</button>
+                    <button onClick="button(6)">6</button>
+                    <button id="operator" onClick="button('-')">-</button>
+                    <button onClick="button(7)">7</button>
+                    <button onClick="button(8)">8</button>
+                    <button onClick="button(9)">9</button>
+                    <button id="operator" onClick="button('*')">*</button>
+                    <button id="operator" onClick="reset()">AC</button>
+                    <button onClick="button(0)">0</button>
+                    <button id="operator" onClick="sortInput()">=</button>
+                    <button id="operator" onClick="button('/')">/</button>
+                    -- <button onClick="printt()">?</button>--
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
