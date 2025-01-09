@@ -6,11 +6,11 @@
 
 body {
     background-color: rgb(80, 76, 70);
-    box-sizing: border-box; 
+    box-sizing: border-box;
 
 }
 
-.nav-container{
+.nav-container {
     margin-bottom: 40px;
 }
 
@@ -24,7 +24,7 @@ nav {
     width: 100%;
 }
 
-nav h1{
+nav h1 {
     font-size: 55px;
     font-family: sans-serif;
     color: rgb(53 53 53);
@@ -33,25 +33,25 @@ nav h1{
     transform: translateX(-50%);
 }
 
-.calc-wrapper{
+.calc-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.calc-container{
+.calc-container {
     align-items: center;
     background: rgb(228, 228, 228);
     width: 30vw;
     height: 100%;
     padding: 1.8% 1.8%;
 
-    -webkit-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
 }
 
-.button-container{
+.button-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.6vw;
@@ -68,15 +68,15 @@ button {
     color: black;
     font-size: max(12px, 1.8vw);
     border-radius: 15%;
-    border:none;
+    border: none;
     align-items: center;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(211, 137, 1);
 }
 
-.monitor-container{
+.monitor-container {
     margin-bottom: 15px;
     display: flex;
     width: 100%;
@@ -88,13 +88,13 @@ button:hover{
     justify-content: center;
 }
 
-#monitor{
+#monitor {
     font-size: max(12px, 2vw);
     color: black;
     margin: auto;
 }
 
-#operator{
+#operator {
     background-color: rgb(80, 76, 70);
     color: orange;
 }
