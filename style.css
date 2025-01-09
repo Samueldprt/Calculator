@@ -42,7 +42,7 @@ nav h1 {
 .calc-container {
     align-items: center;
     background: rgb(228, 228, 228);
-    width: 30vw;
+    width: 22vw;
     height: 100%;
     padding: 1.8% 1.8%;
 
@@ -62,8 +62,8 @@ nav h1 {
 
 button {
     cursor: pointer;
-    width: 7vw;
-    height: 7vw;
+    width: 5vw;
+    height: 5vw;
     background-color: orange;
     color: black;
     font-size: max(12px, 1.8vw);
@@ -73,17 +73,17 @@ button {
 }
 
 button:hover {
-    background-color: rgb(211, 137, 1);
+    background-color: rgb(226, 147, 0);
 }
 
 .monitor-container {
     margin-bottom: 15px;
     display: flex;
     width: 100%;
-    height: 8vw;
+    height: 6vw;
     background-color: lightgray;
     border: solid 2px;
-    border-color: darkgray;
+    border-color: #c9c9c9;
     border-radius: 20px;
     justify-content: center;
 }
@@ -97,4 +97,19 @@ button:hover {
 #operator {
     background-color: rgb(80, 76, 70);
     color: orange;
+}
+
+#operator:hover {
+    background-color: rgb(65, 61, 56);
+    color: rgb(226, 147, 0);
+}
+
+#menu {
+    background-color: rgb(176 176 176);
+    color: black;
+}
+
+#menu:hover {
+    background-color: rgb(156, 156, 156);
+    color: black;
 }

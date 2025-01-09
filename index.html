@@ -24,10 +24,15 @@
                     <div id="monitor"></div>
                 </div>
                 <div class="button-container">
+                    <button id="menu" onClick="ac()">AC</button>
+                    <button id="menu"
+                        onClick="document.getElementById('monitor').innerHTML = display + ans">ANS</button>
+                    <button id="menu" onClick="">x</button>
+                    <button id="operator" onClick="button('/')">÷</button>
                     <button onClick="button(1)">1</button>
                     <button onClick="button(2)">2</button>
                     <button onClick="button(3)">3</button>
-                    <button id="operator" onClick="button('+')">+</button>
+                    <button id="operator" onClick="button('*')">×</button>
                     <button onClick="button(4)">4</button>
                     <button onClick="button(5)">5</button>
                     <button onClick="button(6)">6</button>
@@ -35,12 +40,11 @@
                     <button onClick="button(7)">7</button>
                     <button onClick="button(8)">8</button>
                     <button onClick="button(9)">9</button>
-                    <button id="operator" onClick="button('*')">*</button>
-                    <button id="operator" onClick="reset()">AC</button>
+                    <button id="operator" onClick="button('+')">+</button>
+                    <button onClick="printt()">?</button>
                     <button onClick="button(0)">0</button>
+                    <button onClick="button('.')">,</button>
                     <button id="operator" onClick="sortInput()">=</button>
-                    <button id="operator" onClick="button('/')">/</button>
-                    -- <button onClick="printt()">?</button>--
                 </div>
             </div>
         </div>

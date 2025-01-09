@@ -2,6 +2,8 @@ let display = "";
 let numbersString = [];
 let numbersInt = [];
 let operators = [];
+let result = 0;
+let ans = 120;
 
 //Function saving all pressed buttons and showing them on screen
 function button(x) {
@@ -29,9 +31,37 @@ function sortInput() {
 }
 
 function calculate() {
+    if (display[0] == "-") {
+        result = numbersInt[0] * -1;
+        for (let i = 0; i < operators.length; i++) {
+            const operator = operators[i + 1];
+            const nextNumber = numbersInt[i + 1];
+
+            switch (operator) {
+                case "+":
+                    result += nextNumber;
+
+                case "-":
+                    result -= nextNumber;
+
+                case "*":
+                    result *= nextNumber;
+            }
+        }
+
+    } else {
+        result = numbersInt[0];
+        for (let i = 0; i < operators.length; i++) {
+            const operator = operators[i];
+            const nextNumber = numbersInt[i + 1];
 
 
-    document.getElementById("monitor").innerHTML = result
+        }
+
+    }
+
+    document.getElementById("monitor").innerHTML = result;
+    ans = result;
 }
 
 function printt() {
@@ -40,7 +70,7 @@ function printt() {
     console.log(operators);
 }
 
-function reset() {
+function ac() {
     display = "";
     operators = [];
     numbersString = [];
