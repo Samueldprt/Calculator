@@ -33,65 +33,130 @@ nav h1 {
     transform: translateX(-50%);
 }
 
-.calc-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 499px) {
+
+    .calc-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calc-container {
+        align-items: center;
+        background: rgb(228, 228, 228);
+        padding: 22px;
+        -webkit-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
+    }
+
+    .button-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    button {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        background-color: orange;
+        color: black;
+        font-size: 22px;
+        border-radius: 15%;
+        border: none;
+        align-items: center;
+    }
+
+    button:hover {
+        background-color: rgb(226, 147, 0);
+    }
+
+    .monitor-container {
+        margin-bottom: 15px;
+        display: flex;
+        width: 100%;
+        height: 86px;
+        background-color: lightgray;
+        border: solid 2px;
+        border-color: #c9c9c9;
+        border-radius: 20px;
+        justify-content: center;
+    }
+
+    #monitor {
+        font-size: 21px;
+        color: black;
+        margin: auto;
+        overflow: hidden;
+    }
+
 }
 
-.calc-container {
-    align-items: center;
-    background: rgb(228, 228, 228);
-    width: 22vw;
-    height: 100%;
-    padding: 1.8% 1.8%;
+@media (min-width: 500px) {
 
-    -webkit-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
-}
+    .calc-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4px;
+    }
 
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.6vw;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
-}
+    .calc-container {
+        align-items: center;
+        background: rgb(228, 228, 228);
+        padding: 34px;
+        -webkit-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.75);
+    }
 
-button {
-    cursor: pointer;
-    width: 5vw;
-    height: 5vw;
-    background-color: orange;
-    color: black;
-    font-size: max(12px, 1.8vw);
-    border-radius: 15%;
-    border: none;
-    align-items: center;
-}
+    .button-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 11px;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
 
-button:hover {
-    background-color: rgb(226, 147, 0);
-}
+    button {
+        cursor: pointer;
+        width: 94px;
+        height: 94px;
+        background-color: orange;
+        color: black;
+        font-size: 34px;
+        border-radius: 15%;
+        border: none;
+        align-items: center;
+    }
 
-.monitor-container {
-    margin-bottom: 15px;
-    display: flex;
-    width: 100%;
-    height: 6vw;
-    background-color: lightgray;
-    border: solid 2px;
-    border-color: #c9c9c9;
-    border-radius: 20px;
-    justify-content: center;
-}
+    button:hover {
+        background-color: rgb(226, 147, 0);
+    }
 
-#monitor {
-    font-size: max(12px, 2vw);
-    color: black;
-    margin: auto;
+    .monitor-container {
+        margin-bottom: 15px;
+        display: flex;
+        width: 100%;
+        height: 114px;
+        background-color: lightgray;
+        border: solid 2px;
+        border-color: #c9c9c9;
+        border-radius: 20px;
+        justify-content: center;
+    }
+
+    #monitor {
+        font-size: 43px;
+        color: black;
+        margin: auto;
+        overflow: hidden;
+    }
 }
 
 #operator {
