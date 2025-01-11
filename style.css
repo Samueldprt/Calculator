@@ -42,6 +42,8 @@ nav h1 {
     }
 
     .calc-container {
+        position: relative;
+        z-index: 1;
         align-items: center;
         background: rgb(228, 228, 228);
         padding: 22px;
@@ -106,6 +108,8 @@ nav h1 {
     }
 
     .calc-container {
+        position: relative;
+        z-index: 1;
         align-items: center;
         background: rgb(228, 228, 228);
         padding: 34px;
@@ -121,6 +125,7 @@ nav h1 {
         justify-content: center;
         margin: auto;
         width: 100%;
+        max-width: 409px;
     }
 
     button {
@@ -177,4 +182,20 @@ nav h1 {
 #menu:hover {
     background-color: rgb(156, 156, 156);
     color: black;
+}
+
+#help-wrapper {
+    display: none;
+}
+
+.help-container {
+    position: relative;
+    z-index: 2;
+    height: 619px;
+    width: 85%;
+    background-color: orange;
+    border-radius: 2px;
+    border: solid;
+    border-color: rgb(80, 76, 70);
+    margin: -663px auto;
 }
