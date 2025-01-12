@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                     <button onClick="button(8)">8</button>
                     <button onClick="button(9)">9</button>
                     <button id="operator" onClick="button('+')">+</button>
-                    <button onClick="help()">?</button>
+                    <button onClick="help()"><i class="fa fa-id-card-o" style="font-size:36px"></i></button>
                     <button onClick="button(0)">0</button>
                     <button onClick="button('.')">,</button>
                     <button id="operator" onClick="sortInput()">=</button>
@@ -51,13 +51,19 @@
             <div class="help-container">
                 <div class="help-headline">
                     <div class="close-container">
-                        <button onClick="help()">
-                            X
-                        </button>
+                        <button id="close-button" onClick="help()"></button>
                     </div>
                 </div>
                 <div class="help-text">
-
+                    <h1>Calculcator by Samuel Dippert</h1>
+                    <h2>Software Developer in training</h2>
+                    <br>
+                    <br>
+                    <span>
+                        <i class="fa fa-linkedin-square" style="font-size:50px"></i>
+                        <i class="fa fa-github" style="font-size:50px"></i>
+                        <i class="fa fa-envelope-square" style="font-size:50px"></i>
+                    </span>
                 </div>
             </div>
         </div>
